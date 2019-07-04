@@ -1,0 +1,32 @@
+2019-07-04 15:18:20.703 INFO  [12441] [Opticks::init@313] COMPUTE_MODE forced_compute 
+2019-07-04 15:18:20.713 INFO  [12441] [BOpticksResource::setupViaKey@531] 
+             BOpticksKey  :  
+      spec (OPTICKS_KEY)  : OKX4Test.X4PhysicalVolume.lWorld0x4bc2710_PV.f6cc352e44243f8fa536ab483ad390ce
+                 exename  : OKX4Test
+         current_exename  : OKG4Test
+                   class  : X4PhysicalVolume
+                 volname  : lWorld0x4bc2710_PV
+                  digest  : f6cc352e44243f8fa536ab483ad390ce
+                  idname  : OKX4Test_lWorld0x4bc2710_PV_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2019-07-04 15:18:20.713 ERROR [12441] [BFile::ResolveKey@177] replacing allowed envvar token TMP with default value /tmp/root/opticks as envvar not defined 
+2019-07-04 15:18:20.714 INFO  [12441] [Opticks::initResource@620]  (direct mode) NOT setting IDPATH envvar  [/usr/local/opticks/geocache/OKX4Test_lWorld0x4bc2710_PV_g4live/g4ok_gltf/f6cc352e44243f8fa536ab483ad390ce/1]
+2019-07-04 15:18:20.714 WARN  [12441] [OpticksHub::configure@310] OpticksHub::configure FORCED COMPUTE MODE : as remote session detected 
+2019-07-04 15:18:20.714 INFO  [12441] [OpticksHub::loadGeometry@499] [ /usr/local/opticks/geocache/OKX4Test_lWorld0x4bc2710_PV_g4live/g4ok_gltf/f6cc352e44243f8fa536ab483ad390ce/1
+2019-07-04 15:18:20.714 ERROR [12441] [GGeo::init@425]  idpath /usr/local/opticks/geocache/OKX4Test_lWorld0x4bc2710_PV_g4live/g4ok_gltf/f6cc352e44243f8fa536ab483ad390ce/1 cache_exists 1 cache_requested 1 m_loaded_from_cache 1 m_live 0 will_load_libs 1
+2019-07-04 15:18:21.141 INFO  [12441] [NMeta::dump@129] GGeo::loadCacheMeta
+2019-07-04 15:18:21.141 INFO  [12441] [NMeta::dump@129] GGeo::loadCacheMeta.lv2sd
+2019-07-04 15:18:21.157 INFO  [12441] [OpticksHub::loadGeometry@517] --test modifying geometry
+2019-07-04 15:18:21.157 ERROR [12441] [NCSGList::Load@39] missing csgpath /tboolean-box
+2019-07-04 15:18:21.157 ERROR [12441] [GGeoTest::init@140] [
+2019-07-04 15:18:21.157 ERROR [12441] [GGeoTest::initCreateCSG@230]  m_csgpath /tboolean-box
+2019-07-04 15:18:21.158 ERROR [12441] [BFile::ResolveKey@177] replacing allowed envvar token TMP with default value /tmp/root/opticks as envvar not defined 
+2019-07-04 15:18:21.536 INFO  [12441] [CRandomEngine::initCurand@103] 100000,16,16 curand_ni 100000 curand_nv 256
+2019-07-04 15:18:21.536 INFO  [12441] [CRandomEngine::dumpDouble@86] v0
+2019-07-04 15:18:21.537 INFO  [12441] [CRandomEngine::dumpDouble@86] v1
+2019-07-04 15:18:21.537 INFO  [12441] [CRandomEngine::dumpDouble@86] v99999
+2019-07-04 15:18:21.593 ERROR [12441] [CTestDetector::init@70] [
+2019-07-04 15:18:21.593 ERROR [12441] [CTestDetector::makeDetector_NCSG@238]  numVolumes 0

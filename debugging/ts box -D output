@@ -1,0 +1,144 @@
+root@bristollz:/home/ubuntu/opticks# ts box -D
+====== /home/ubuntu/opticks/bin/tboolean.sh -D ====== PWD /home/ubuntu/opticks =================
+tboolean-lv -D
+=== tboolean-lv : tboolean-box
+args: 
+[2019-07-04 15:14:11,269] p12208 {csg.py    :440} INFO     - CSG.Serialize : writing 2 trees to directory $TMP/tboolean-box 
+[2019-07-04 15:14:11,270] p12208 {csg.py    :794} INFO     -  soIdx 0 lvIdx 0 height 0 
+[2019-07-04 15:14:11,276] p12208 {csg.py    :816} INFO     - save to idxpath $TMP/tboolean-box/0/srcidx.npy 
+[2019-07-04 15:14:11,277] p12208 {csg.py    :785} WARNING  - basename of treedir 1 does not match the lvIdx 0 
+[2019-07-04 15:14:11,277] p12208 {csg.py    :794} INFO     -  soIdx 0 lvIdx 0 height 0 
+[2019-07-04 15:14:11,278] p12208 {csg.py    :816} INFO     - save to idxpath $TMP/tboolean-box/1/srcidx.npy 
+autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=$TMP/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum
+=== tboolean-box : testconfig autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=$TMP/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum
+
+tboolean-info
+==================
+
+
+BASH_VERSION         : 4.4.19(1)-release
+TESTNAME             : tboolean-box
+TESTCONFIG           : autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=$TMP/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum
+TORCHCONFIG          : 
+
+tboolean-testname    : tboolean-box
+tboolean-testconfig  : autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=$TMP/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum
+tboolean-torchconfig : type=disc_photons=100000_mode=fixpol_polarization=1,1,0_frame=-1_transform=1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000_source=0,0,599_target=0,0,0_time=0.1_radius=300_distance=200_zenithazimuth=0,1,0,1_material=Vacuum_wavelength=500
+
+
+=== o-cmdline-binary-match : --okg4
+=== o-gdb-update : placeholder
+=== o-main : gdb --args /usr/local/opticks/lib/OKG4Test --okg4 --align --dbgskipclearzero --dbgnojumpzero --dbgkludgeflatzero -D --envkey --rendermode +global,+axis --geocenter --stack 2180 --eye 1,0,0 --test --testconfig autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=$TMP/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum --torch --torchconfig type=disc_photons=100000_mode=fixpol_polarization=1,1,0_frame=-1_transform=1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000_source=0,0,599_target=0,0,0_time=0.1_radius=300_distance=200_zenithazimuth=0,1,0,1_material=Vacuum_wavelength=500 --torchdbg --tag 1 --pfx tboolean-box --cat tboolean-box --anakey tboolean --args --save ======= PWD /home/ubuntu/opticks Thu Jul 4 15:14:11 UTC 2019
+GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from /usr/local/opticks/lib/OKG4Test...done.
+(gdb) r
+Starting program: /usr/local/opticks/lib/OKG4Test --okg4 --align --dbgskipclearzero --dbgnojumpzero --dbgkludgeflatzero -D --envkey --rendermode +global,+axis --geocenter --stack 2180 --eye 1,0,0 --test --testconfig autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum --torch --torchconfig type=disc_photons=100000_mode=fixpol_polarization=1,1,0_frame=-1_transform=1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000_source=0,0,599_target=0,0,0_time=0.1_radius=300_distance=200_zenithazimuth=0,1,0,1_material=Vacuum_wavelength=500 --torchdbg --tag 1 --pfx tboolean-box --cat tboolean-box --anakey tboolean --args --save
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+PLOG::EnvLevel adjusting loglevel by envvar   key NCSGList level ERROR fallback DEBUG
+PLOG::EnvLevel adjusting loglevel by envvar   key GGeoTest level ERROR fallback DEBUG
+PLOG::EnvLevel adjusting loglevel by envvar   key CTestDetector level ERROR fallback DEBUG
+/usr/local/opticks/lib/OKG4Test --okg4 --align --dbgskipclearzero --dbgnojumpzero --dbgkludgeflatzero -D --envkey --rendermode +global,+axis --geocenter --stack 2180 --eye 1,0,0 --test --testconfig autoseqmap=TO:0,SR:1,SA:0_name=tboolean-box_outerfirst=1_analytic=1_csgpath=/tboolean-box_mode=PyCsgInBox_autoobject=Vacuum/perfectSpecularSurface//GlassSchottF2_autoemitconfig=photons:600000,wavelength:380,time:0.2,posdelta:0.1,sheetmask:0x1,umin:0.45,umax:0.55,vmin:0.45,vmax:0.55,diffuse:1,ctmindiffuse:0.5,ctmaxdiffuse:1.0_autocontainer=Rock//perfectAbsorbSurface/Vacuum --torch --torchconfig type=disc_photons=100000_mode=fixpol_polarization=1,1,0_frame=-1_transform=1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000,0.000,0.000,0.000,0.000,1.000_source=0,0,599_target=0,0,0_time=0.1_radius=300_distance=200_zenithazimuth=0,1,0,1_material=Vacuum_wavelength=500 --torchdbg --tag 1 --pfx tboolean-box --cat tboolean-box --anakey tboolean --args --save 
+2019-07-04 15:14:29.179 INFO  [12297] [Opticks::init@313] COMPUTE_MODE forced_compute 
+2019-07-04 15:14:29.189 INFO  [12297] [BOpticksResource::setupViaKey@531] 
+             BOpticksKey  :  
+      spec (OPTICKS_KEY)  : OKX4Test.X4PhysicalVolume.lWorld0x4bc2710_PV.f6cc352e44243f8fa536ab483ad390ce
+                 exename  : OKX4Test
+         current_exename  : OKG4Test
+                   class  : X4PhysicalVolume
+                 volname  : lWorld0x4bc2710_PV
+                  digest  : f6cc352e44243f8fa536ab483ad390ce
+                  idname  : OKX4Test_lWorld0x4bc2710_PV_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2019-07-04 15:14:29.189 ERROR [12297] [BFile::ResolveKey@177] replacing allowed envvar token TMP with default value /tmp/root/opticks as envvar not defined 
+2019-07-04 15:14:29.189 INFO  [12297] [Opticks::initResource@620]  (direct mode) NOT setting IDPATH envvar  [/usr/local/opticks/geocache/OKX4Test_lWorld0x4bc2710_PV_g4live/g4ok_gltf/f6cc352e44243f8fa536ab483ad390ce/1]
+2019-07-04 15:14:29.190 WARN  [12297] [OpticksHub::configure@310] OpticksHub::configure FORCED COMPUTE MODE : as remote session detected 
+2019-07-04 15:14:29.190 INFO  [12297] [OpticksHub::loadGeometry@499] [ /usr/local/opticks/geocache/OKX4Test_lWorld0x4bc2710_PV_g4live/g4ok_gltf/f6cc352e44243f8fa536ab483ad390ce/1
+2019-07-04 15:14:29.190 ERROR [12297] [GGeo::init@425]  idpath /usr/local/opticks/geocache/OKX4Test_lWorld0x4bc2710_PV_g4live/g4ok_gltf/f6cc352e44243f8fa536ab483ad390ce/1 cache_exists 1 cache_requested 1 m_loaded_from_cache 1 m_live 0 will_load_libs 1
+2019-07-04 15:14:29.621 INFO  [12297] [NMeta::dump@129] GGeo::loadCacheMeta
+{
+    "argline": "/usr/local/opticks/lib/OKX4Test --okx4 --g4codegen --deletegeocache --gdmlpath /usr/local/opticks/opticksdata/export/juno1808/g4_00_v5.gdml --csgskiplv 22 --runfolder geocache-j1808-v5 --runcomment fix-lv10-coincidence-speckle ",
+    "location": "Opticks::updateCacheMeta",
+    "runcomment": "fix-lv10-coincidence-speckle",
+    "rundate": "20190704_150906",
+    "runfolder": "geocache-j1808-v5",
+    "runlabel": "R0_cvd_",
+    "runstamp": 1562252946
+}
+2019-07-04 15:14:29.621 INFO  [12297] [NMeta::dump@129] GGeo::loadCacheMeta.lv2sd
+2019-07-04 15:14:29.637 INFO  [12297] [OpticksHub::loadGeometry@517] --test modifying geometry
+2019-07-04 15:14:29.638 ERROR [12297] [NCSGList::Load@39] missing csgpath /tboolean-box
+2019-07-04 15:14:29.638 ERROR [12297] [GGeoTest::init@140] [
+2019-07-04 15:14:29.638 ERROR [12297] [GGeoTest::initCreateCSG@230]  m_csgpath /tboolean-box
+2019-07-04 15:14:29.638 ERROR [12297] [BFile::ResolveKey@177] replacing allowed envvar token TMP with default value /tmp/root/opticks as envvar not defined 
+2019-07-04 15:14:30.016 INFO  [12297] [CRandomEngine::initCurand@103] 100000,16,16 curand_ni 100000 curand_nv 256
+2019-07-04 15:14:30.016 INFO  [12297] [CRandomEngine::dumpDouble@86] v0
+0.7402193546 0.4384511411 0.5170126557 0.1569886208 
+0.0713675097 0.4625083804 0.2276432663 0.3293584883 
+0.1440653056 0.1877991110 0.9153834581 0.5401248336 
+0.9746608734 0.5474692583 0.6531602740 0.2302378118 
+2019-07-04 15:14:30.016 INFO  [12297] [CRandomEngine::dumpDouble@86] v1
+0.9209938049 0.4603644311 0.3334640563 0.3725204170 
+0.4896024764 0.5672709346 0.0799058080 0.2333681583 
+0.5093778372 0.0889785364 0.0067097610 0.9542270899 
+0.5467113256 0.8245469332 0.5270628929 0.9301316142 
+2019-07-04 15:14:30.016 INFO  [12297] [CRandomEngine::dumpDouble@86] v99999
+0.9140115380 0.4403249323 0.9478355646 0.0900180787 
+0.9587481022 0.9879503846 0.2274523973 0.0438494608 
+0.7774492502 0.5030837059 0.3050957322 0.1865014136 
+0.3225504756 0.7395612597 0.6332361102 0.6526388526 
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+**************************************************************
+ Geant4 version Name: geant4-10-04-patch-02    (25-May-2018)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+HepRandomEngine::put called -- no effect!
+2019-07-04 15:14:30.073 ERROR [12297] [CTestDetector::init@70] [
+2019-07-04 15:14:30.073 ERROR [12297] [CTestDetector::makeDetector_NCSG@238]  numVolumes 0
+OKG4Test: /home/ubuntu/opticks/cfg4/CTestDetector.cc:243: G4VPhysicalVolume* CTestDetector::makeDetector_NCSG(): Assertion `universe' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+(gdb) bt
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff37e4801 in __GI_abort () at abort.c:79
+#2  0x00007ffff37d439a in __assert_fail_base (fmt=0x7ffff395b7d8 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x7ffff62a9b01 "universe", 
+    file=file@entry=0x7ffff62a99a8 "/home/ubuntu/opticks/cfg4/CTestDetector.cc", line=line@entry=243, 
+    function=function@entry=0x7ffff62a9d00 <CTestDetector::makeDetector_NCSG()::__PRETTY_FUNCTION__> "G4VPhysicalVolume* CTestDetector::makeDetector_NCSG()") at assert.c:92
+#3  0x00007ffff37d4412 in __GI___assert_fail (assertion=0x7ffff62a9b01 "universe", file=0x7ffff62a99a8 "/home/ubuntu/opticks/cfg4/CTestDetector.cc", line=243, 
+    function=0x7ffff62a9d00 <CTestDetector::makeDetector_NCSG()::__PRETTY_FUNCTION__> "G4VPhysicalVolume* CTestDetector::makeDetector_NCSG()") at assert.c:101
+#4  0x00007ffff62662ff in CTestDetector::makeDetector_NCSG (this=0x555555819190) at /home/ubuntu/opticks/cfg4/CTestDetector.cc:243
+#5  0x00007ffff626524c in CTestDetector::makeDetector (this=0x555555819190) at /home/ubuntu/opticks/cfg4/CTestDetector.cc:95
+#6  0x00007ffff62650a2 in CTestDetector::init (this=0x555555819190) at /home/ubuntu/opticks/cfg4/CTestDetector.cc:78
+#7  0x00007ffff6264ee0 in CTestDetector::CTestDetector (this=0x555555819190, hub=0x55555580ed40, query=0x0, sd=0x55555b5df120) at /home/ubuntu/opticks/cfg4/CTestDetector.cc:64
+#8  0x00007ffff61f8c56 in CGeometry::init (this=0x55555b5e0510) at /home/ubuntu/opticks/cfg4/CGeometry.cc:73
+#9  0x00007ffff61f8b34 in CGeometry::CGeometry (this=0x55555b5e0510, hub=0x55555580ed40, sd=0x55555b5df120) at /home/ubuntu/opticks/cfg4/CGeometry.cc:63
+#10 0x00007ffff6273e56 in CG4::CG4 (this=0x55555a412830, hub=0x55555580ed40) at /home/ubuntu/opticks/cfg4/CG4.cc:127
+#11 0x00007ffff7bcf1a8 in OKG4Mgr::OKG4Mgr (this=0x7fffffffd210, argc=32, argv=0x7fffffffd578) at /home/ubuntu/opticks/okg4/OKG4Mgr.cc:76
+#12 0x000055555555849a in main (argc=32, argv=0x7fffffffd578) at /home/ubuntu/opticks/okg4/tests/OKG4Test.cc:8
